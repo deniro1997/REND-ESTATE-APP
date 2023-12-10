@@ -51,7 +51,7 @@ const Header = () => {
                <Link to="/" className="flex gap-4">
                 <img src="/rend.png" alt="logo" className="h-[50px] w-[50px]" />
                 <span className='text-2xl text-blue-700 font-semibold pt-2'>R-END</span>
-            <span className='text-slate-700 font-semibold text-2xl pr-2 pt-2'>ESTATE</span>
+            
 
                </Link>
             <form onSubmit={handleSubmit} className="bg-slate-100 p-3 rounded-lg flex items-center">
