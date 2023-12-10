@@ -32,7 +32,7 @@ const Home = () => {
     const fetchOfferListings = async () =>{
 
       try {
-        const res = await fetch(`/api/listing/get?offer=true&limit=6`);
+        const res = await fetch('/api/listing/get?offer=true&limit=6');
         const data = await res.json();
         setOfferListings(data)
         fetchRentListings();
@@ -48,7 +48,7 @@ const Home = () => {
     const fetchRentListings = async()=>{
       try {
 
-        const res = await fetch(`/api/listing/get?type=rent&limit=6`);
+        const res = await fetch('/api/listing/get?type=rent&limit=6');
         const data = await res.json();
         setRentListings(data);
         fetchSaleListings();
@@ -64,7 +64,7 @@ const Home = () => {
     const fetchSaleListings = async()=>{
       try {
 
-        const res = await fetch(`/api/listing/get?type=sale&limit=6`)
+        const res = await fetch('/api/listing/get?type=sale&limit=6')
         const data = await res.json();
         setSaleListings(data)
         
@@ -100,7 +100,7 @@ const Home = () => {
           to={'/search'}
           className='text-xs sm:text-sm text-blue-800 font-bold hover:underline'
         >
-          Let's get started...
+          Lets get started ....
         </Link>
       </div>
 
